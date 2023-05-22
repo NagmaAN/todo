@@ -1,0 +1,70 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: 'Poppins';
+  text-transform: capitalize;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #ff0 50%, #333 50%);
+}
+.container{
+  height: 450px;
+  width: 330px;
+  background: #fff;
+  border-radius: 0 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+h2{
+  color: #404040;
+}
+#input{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  background: #666;
+  color: #fff;
+  padding: 0 10px;
+  margin: 15px 0;
+}
+#input::placeholder{
+  color: #fff;
+}
+ul li{
+ list-style: none;
+ background: #eee;
+ color: #333;
+ height: 40px;
+ border-radius: 50px;
+ margin: 10px 0;
+ padding: 10px;
+ position: relative;
+}
+ul .fa-check, .fa-trash{
+  position: absolute;
+ cursor: pointer; 
+}
+ul .fa-check{
+  right: 40px;
+  color: green;
+}
+ul .fa-trash{
+  right: 15px;
+  color: #ff0033;
+}
+ul .checked{
+  transition: 2s;
+  background-color: lightgreen;
+  text-decoration: line-through;
+}
